@@ -5,62 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <h1 id="title">Survey Form</h1>
 
-    <p id="description">Me ajude a fazer você perder <strike>30 segundos</strike> 2 minutos da sua vida com essa pesquisa completamente inutil.</p>   
-
-    <div>
-        <form action="" id="survey-form">
-            <label for="name" id="name-label">Nome:</label>
-            <input type="text" name="name" id="name" placeholder="Bob Blob" required><br>
-
-            <label for="email" id="email-label">Email:</label>
-            <input type="email" name="email" id="email" placeholder="myEmail@mail.com" required><br>
-
-            <label for="number" id="number-label">Numero sei lá o que:</label>
-            <input type="number" min="0" max="99" name="number" id="number" placeholder="69" required><br>
-
-            <label for="dropdown">Escolha um dos valores:</label>
-            <select name="dropdown" id="dropdown">
-                <option value=""></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select><br>
-
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="male" value="male">
-
-            <label for="female">female</label>
-            <input type="radio" name="gender" id="female" value="female"><br>
+    <div id="container">
+        <div id="form-big">
             
-            <label for="bolacha">Bolacha</label>
-            <input type="radio" name="biscoito" id="bolacha" value="biscoito">
-
-            <label for="biscoito">Biscoito</label>
-            <input type="radio" name="biscoito" id="biscoito" value="biscoito"><br>
-
-            
-            <label for="coca">Coca</label>
-            <input type="checkbox" name="cbox" id="coca" value="coca">
-            <label for="pepsi">Pepsi</label>
-            <input type="checkbox" name="cbox" id="pepsi" value="pepsi">
-            <label for="fanta">Fanta</label>
-            <input type="checkbox" name="cbox" id="fanta" value="fanta">
-            <label for="sprite">Sprite</label>
-            <input type="checkbox" name="cbox" id="sprite" value="sprite"><br>
-
-            
-            <textarea name="caixaTexto" id="caixaTexto" cols="30" rows="10" placeholder="Deixe sua opinião..." required></textarea><br>
-
-            <button id="submit">Submit</button>
-        </form>
+            <h1 id="title" >Pesquisa inútil</h1>
+        
+            <p id="description" >Me ajude a fazer você perder <strike>30 segundos</strike> 2 minutos da sua vida com essa pesquisa completamente inútil.</p>   
+        
+            <div>
+                <form action="" id="survey-form">
+                    <p>
+                        <label for="name" id="name-label">Nome:</label><br>
+                            <input type="text" name="name" id="name" placeholder="Bob Blob" required><br>
+                    </p>
+        
+                    <p>
+                        <label for="email" id="email-label">Email:</label><br>
+                            <input type="email" name="email" id="email" placeholder="myEmail@mail.com" required><br>
+                    </p>
+        
+                    <p>
+                        <label for="number" id="number-label">Numero sei lá o que:</label>
+                            <input type="number" min="0" max="99" name="number" id="number" placeholder="69" required><br>
+                    </p>
+        
+                    <label for="dropdown">Escolha um dos valores:</label>
+                        <select name="dropdown" id="dropdown">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select><br>
+        
+                    <p>
+                        <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male" value="male">
+                        <label for="female">female</label>
+                            <input type="radio" name="gender" id="female" value="female"><br>
+                    </p>
+                    
+                    <label for="bolacha">Bolacha</label>
+                        <input type="radio" name="biscoito" id="bolacha" value="biscoito">
+                    <label for="biscoito">Biscoito</label>
+                        <input type="radio" name="biscoito" id="biscoito" value="biscoito"><br>
+        
+                    
+                    <p>
+                        <label for="coca">Coca</label>
+                            <input type="checkbox" name="cbox" id="coca" value="coca">
+                        <label for="pepsi">Pepsi</label>
+                            <input type="checkbox" name="cbox" id="pepsi" value="pepsi">
+                        <label for="fanta">Fanta</label>
+                            <input type="checkbox" name="cbox" id="fanta" value="fanta">
+                        <label for="sprite">Sprite</label>
+                            <input type="checkbox" name="cbox" id="sprite" value="sprite"><br>
+                    </p>
+        
+                    
+                    <textarea name="caixaTexto" id="caixaTexto" cols="30" rows="10" placeholder="Deixe sua opinião..." required></textarea><br>
+        
+                    <button id="submit">Submit</button>
+                </form>
+        </div>
     </div>
+    
 </body>
 </html>

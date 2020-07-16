@@ -1,0 +1,34 @@
+
+body{
+    background-image: url(https://goldwallpapers.com/uploads/posts/bubbles-wallpaper/bubbles_wallpaper_001.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+#container{
+    width: 50%;
+    margin: auto;
+}
+#form-big{
+    background-color: rgba(32, 45, 223, 0.95);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    
+}
+#survey-form{
+    background-image: url(https://www.publicdomainpictures.net/pictures/20000/velka/ice-cubes.jpg);
+    border-radius: 25px;
+    padding: 2%;
+    text-align: center;
+}
