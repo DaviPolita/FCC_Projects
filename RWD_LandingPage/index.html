@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="header">
@@ -12,29 +13,53 @@
 
         <div id="nav-div">
             <nav id="nav-bar">
-                <a href="logo.svg" class="nav-link">Inicio</a>
+                <a href="#top" class="nav-link">Inicio</a>
                 <a href="#video" class="nav-link">Video</a>
                 <a href="#submit" class="nav-link">Comprar</a>
             </nav>
         </div>
+    </header>
 
+    <section>
+        <div id="description">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam officiis quidem asperiores, minima voluptatum quas repudiandae tempore maxime, deserunt voluptates omnis. In earum eius dolorem voluptas? Nam aperiam aliquid praesentium.</p>
+        </div>
+    
         <div id="video-div">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ID_L0aGI9bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
         </div>
-
+    
         <div id="options-div">
-            <img src="FingerBox01.jpg" alt="FingerBox01" id="fbox">
-            <img src="FingerBox02.jpg" alt="FingerBox02" id="fbox">
-            <img src="FingerBox03.jpg" alt="FingerBox03" id="fbox">
+            <div id="fbox">
+                <p>Finger Box "Retro"</p>
+                <img src="FingerBox01.jpg" alt="FingerBox01" id="fboxImg1">
+                <input type="button" value="Comprar" id="buyButton">
+            </div>
+            <div id="fbox">
+                <p>Finger Box "Classic"</p>
+                <img src="FingerBox02.jpg" alt="FingerBox02" id="fboxImg2">
+                <input type="button" value="Comprar" id="buyButton">
+            </div>
+            <div id="fbox">
+                <p>Finger Box "High Tech"</p>
+                <img src="FingerBox03.jpg" alt="FingerBox03" id="fboxImg3">
+                <input type="button" value="Comprar" id="buyButton">
+            </div>
         </div>
+    
+        
+    </section>
 
-        <div>
+    <footer>
+        <div id="form-div">
             <form action="https://www.freecodecamp.com/email-submit" target="_blank">
                 <input type="email" name="email" placeholder="myEmail@mail.com" id="email"><br>
-                <input type="submit" value="Enviar" id="submit">
+                <input type="submit" value="Receber orçamento" id="submit">
             </form>
         </div>
 
-    </header>
+    </footer>
+
+    
 </body>
 </html>
