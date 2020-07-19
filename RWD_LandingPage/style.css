@@ -2,12 +2,12 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-color: burlywood;
+    background-color: lavender;
 }
 header{
     position: fixed;
     display: flex;
-    background-color: darkblue;
+    background-color: rgb(58, 58, 179);
     width: 100%;
     justify-content: space-between;
     margin-right: 30%;
@@ -16,8 +16,17 @@ a{
     color: black;
 }
 
+#site-name{
+    margin-right: 35%;
+}
+#nav-bar > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35vw;
+}
 #header-img{
-    width: 5%;
+    min-width: 5%;
 }
 
 #description{
@@ -44,7 +53,7 @@ a{
     flex-direction: column;
     text-align: center;
     border-radius: 10%;
-    background-color: rgb(139, 236, 236);
+    background-color: aliceblue;
     height: auto;
     margin-bottom: 0;
 }
@@ -72,7 +81,22 @@ a{
 
 #form-div{
     display: flex;
-    margin-top: 5%;
+    margin: 5% 0 2% 0;
     text-align: center;
     justify-content: center;
+}
+#rodape{
+    display: flex;
+    width: 100%;
+    background-color: rgb(61, 61, 129);
+    justify-content: right;
+}
+#rodape > p{
+    margin-right: 5%;
+}
+
+@media (max-width: 600px){
+    body{
+        background-color: red;
+    }
 }
