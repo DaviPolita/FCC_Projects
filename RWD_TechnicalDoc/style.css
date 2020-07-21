@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(163, 194, 194);
+    width: 225px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+nav::-webkit-scrollbar {
+    display: none;
+}
+nav  h1, h3{
+    margin-left: 25px;
+
+}
+
+
+main{
+    background-color: azure;
+    padding: 5% 0 0 3%;
+    width: auto;
+    margin-left: 225px;
+}
+main p{
+    margin: 0 20px 0 0;
+}
+main li{
+    margin: 15px;
+}
+
+@media (max-width: 600px){
+    nav{
+        display: none;
+    }
+    main{
+        margin-left: 0;
+    }
+}
