@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: aquamarine;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+
+}
+.hover-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hover-nav li {
+  float: left;
+}
+
+.hover-nav li a {
+  position: relative;
+  display: block;
+  color: #222;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+li a:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #f6c126;
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+li a:hover:before,
+li a:focus:before {
+  transform: scale(1);
+}
+.welcome-container{
+    background-color: rgb(108, 108, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.projects-container{
+    background-color: rgb(136, 88, 88);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.project-tile{
+    background-color: rgb(86, 100, 72);
+    margin: 10px 0 10px 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.imagem{
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+}
+.project-title{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+
+.footer{
+    background-color: #f6c126;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center; 
+}
+.footer ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
