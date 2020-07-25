@@ -1,25 +1,27 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
-.navbar{
-    background-color: aquamarine;
-    position: fixed;
-    width: 100%;
-    height: 70px;
 
+.navbar {
+  background-color: rgb(60, 83, 107);
+  position: fixed;
+  width: 100%;
+  height: 70px;
 }
+
 .hover-nav ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around; 
-    list-style: none;
-    padding: 0;
-    overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
 }
 
 .hover-nav li {
   float: left;
+  margin: 0 5% 0 5%;
 }
 
 .hover-nav li a {
@@ -48,52 +50,63 @@ li a:hover:before,
 li a:focus:before {
   transform: scale(1);
 }
-.welcome-container{
-    background-color: rgb(108, 108, 189);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+.welcome-container {
+  background-color: slategrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.projects-container{
-    background-color: rgb(136, 88, 88);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 100vh;
+.projects-container {
+  background-color: rgb(24, 43, 61);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
 }
 
-.project-tile{
-    background-color: rgb(86, 100, 72);
-    margin: 10px 0 10px 0;
-    border-radius: 15px;
-    overflow: hidden;
-}
-.imagem{
-    object-fit: cover;
-    width: 350px;
-    height: 350px;
-}
-.project-title{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: larger;
+.project-tile {
+  background-color: rgb(54, 114, 173);
+  margin: 10px 0 10px 0;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.footer{
-    background-color: #f6c126;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center; 
+.imagem {
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
 }
-.footer ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+.project-title {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+}
+
+.footer {
+  background-color: rgb(17, 24, 31);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.footer ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .welcome-container {
+    background-color: chartreuse;
+  }
 }
